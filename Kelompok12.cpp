@@ -54,3 +54,31 @@ int main(){
 	move(16, 70);
 	echo();
 	pilihan = getch();
+
+	switch (pilihan){
+			case '1':
+		clear();
+			mvprintw (15, 55, "Start");
+		refresh();
+	break;
+			case '2':
+		clear();
+			mvprintw (15, 55, "Option");
+		refresh();
+	break;
+			case '3':
+		clear();
+			mvprintw (15, 55, "Keluar dari game...");
+		refresh();
+	break;
+	default:
+		clear();
+			mvprintw (15, 55, "Coba Lagi!");
+		refresh();
+	break;
+	}
+	
+	getch();
+	endwin;
+	return 0;
+}
